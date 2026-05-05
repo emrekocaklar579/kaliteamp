@@ -77,6 +77,160 @@
         .check-list li { margin-bottom: 12px; display: flex; align-items: center; font-weight: 600; color: var(--dark); }
         .check-list li::before { content: "✔"; color: var(--primary); margin-right: 12px; }
 
+        .pricing-section {
+            background: #f8fafc;
+            padding: 55px 20px;
+            margin: 10px 0 35px;
+            border-radius: 22px;
+        }
+
+        .pricing-title {
+            text-align: center;
+            color: #071225;
+            font-size: 1.9rem;
+            line-height: 1.3;
+            margin: 0 0 35px;
+            font-weight: 800;
+        }
+
+        .pricing-grid {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .price-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 22px;
+            padding: 32px;
+            width: 230px;
+            min-height: 360px;
+            box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .price-badges {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 22px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 13px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .badge-time {
+            background: #f0ddff;
+            color: #7a22ce;
+        }
+
+        .badge-popular {
+            background: #d8fbe4;
+            color: #087b38;
+        }
+
+        .price-card h2 {
+            color: #071225;
+            font-size: 1.45rem;
+            line-height: 1.35;
+            margin: 0 0 20px;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        .price {
+            color: #071225;
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 900;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .price small {
+            font-size: 1.1rem;
+            font-weight: 800;
+        }
+
+        .package-list {
+            list-style: none;
+            margin: 0 0 30px;
+            padding: 0;
+        }
+
+        .package-list li {
+            color: #213047;
+            font-size: 0.92rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .package-list li::before {
+            content: "✓";
+            background: #22c55e;
+            color: #fff;
+            width: 17px;
+            height: 17px;
+            min-width: 17px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.72rem;
+            font-weight: 900;
+        }
+
+        .buy-btn {
+            display: block;
+            text-align: center;
+            background: #111827;
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 18px;
+            border-radius: 15px;
+            font-weight: 800;
+            box-shadow: 0 10px 18px rgba(15, 23, 42, 0.22);
+        }
+
+        .faq-box {
+            margin-top: 45px;
+        }
+
+        .faq-item {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 22px;
+            margin-bottom: 16px;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+        }
+
+        .faq-item h3 {
+            margin: 0 0 8px;
+            color: var(--dark);
+            font-size: 1.15rem;
+        }
+
+        .faq-item p {
+            margin: 0;
+            color: #555;
+        }
+
         footer { text-align: center; padding: 40px; background: var(--dark); color: #fff; font-size: 0.9rem; }
         .footer-tags { opacity: 0.6; margin-top: 10px; font-size: 0.7rem; }
     </style>
@@ -88,6 +242,56 @@
       "@type": "WebPage",
       "name": "IPTV Satın Al - Kalite IPTV",
       "description": "Dünya genelinde 4K donmasız IPTV hizmeti ve paketleri."
+    }
+    </script>
+
+    <!-- SSS Schema.org Verisi -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "IPTV satın alırken hangi paketi seçmeliyim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IPTV kullanım sürenize göre 6 aylık, 12 aylık veya 12 aylık VIP paket seçebilirsiniz. Uzun süreli kullanım için 12 aylık paketler daha avantajlıdır. Daha geniş içerik isteyen kullanıcılar VIP paketi tercih edebilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kalite IPTV hangi cihazlarda çalışır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kalite IPTV; Smart TV, Android TV, Android Box, iPhone, iPad, bilgisayar ve uyumlu IPTV uygulamaları üzerinden izlenebilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Donmasız IPTV izlemek için internet hızım kaç Mbps olmalı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HD yayınlar için en az 12 Mbps, 4K yayınlar için ise daha stabil bir deneyim adına 35 Mbps ve üzeri internet bağlantısı önerilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "IPTV kurulumu ne kadar sürer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IPTV kurulumu genellikle kısa sürede tamamlanır. Paket seçimi sonrası kullanıcı paneli ve teknik destek üzerinden gerekli bilgiler sağlanır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "IPTV paketlerinde spor, film ve dizi içerikleri var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Kalite IPTV paketlerinde spor kanalları, film içerikleri, dizi içerikleri ve farklı kategorilerde yayın seçenekleri sunulur."
+          }
+        }
+      ]
     }
     </script>
 </head>
@@ -137,6 +341,116 @@
             <p>
                 Kullanım amacınıza göre Türkiye paketleri veya Uluslararası (Global) paketler arasından seçim yapabilirsiniz. <strong>IPTV satın al</strong> sürecinde deneme yayınları alarak yayın kalitesini ve kanal hızlarını test etmeniz, en doğru kararı vermenizi sağlar. Kalite IPTV olarak, her bütçeye ve her ihtiyaca uygun, içeriği zenginleştirilmiş paketler sunuyoruz.
             </p>
+        </section>
+
+        <section class="pricing-section">
+            <h2 class="pricing-title">Size En Uygun Paketi Seçin</h2>
+
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div>
+                        <div class="price-badges">
+                            <span class="badge badge-time">6 AY</span>
+                        </div>
+
+                        <h2>IPTV Satın Al 6 Aylık Paket</h2>
+
+                        <div class="price">1500<small> ₺</small></div>
+
+                        <ul class="package-list">
+                            <li>Tüm spor kanalları</li>
+                            <li>Tüm film ve diziler</li>
+                        </ul>
+                    </div>
+
+                    <a class="buy-btn" href="https://kaliteplayer11.com" target="_top">Hemen Satın Al</a>
+                </div>
+
+                <div class="price-card">
+                    <div>
+                        <div class="price-badges">
+                            <span class="badge badge-time">12 AY</span>
+                            <span class="badge badge-popular">POPÜLER</span>
+                        </div>
+
+                        <h2>IPTV Satın Al 12 Aylık Paket</h2>
+
+                        <div class="price">2000<small> ₺</small></div>
+
+                        <ul class="package-list">
+                            <li>Tüm spor kanalları</li>
+                            <li>Tüm film ve diziler</li>
+                        </ul>
+                    </div>
+
+                    <a class="buy-btn" href="https://kaliteplayer11.com" target="_top">Hemen Satın Al</a>
+                </div>
+
+                <div class="price-card">
+                    <div>
+                        <div class="price-badges">
+                            <span class="badge badge-time">12 AY</span>
+                            <span class="badge badge-popular">POPÜLER</span>
+                        </div>
+
+                        <h2>IPTV Satın Al 12 Aylık VIP</h2>
+
+                        <div class="price">2500<small> ₺</small></div>
+
+                        <ul class="package-list">
+                            <li>Tüm Kanallar</li>
+                        </ul>
+                    </div>
+
+                    <a class="buy-btn" href="https://kaliteplayer11.com" target="_top">Hemen Satın Al</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-box faq-box">
+            <h2>Sıkça Sorulan Sorular</h2>
+
+            <div class="faq-item">
+                <h3>IPTV satın alırken hangi paketi seçmeliyim?</h3>
+                <p>
+                    IPTV kullanım sürenize göre 6 aylık, 12 aylık veya 12 aylık VIP paket seçebilirsiniz. Daha uzun süreli kullanım isteyenler için 12 aylık paketler daha avantajlıdır. Daha kapsamlı içerik isteyen kullanıcılar ise VIP paketi tercih edebilir.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Kalite IPTV hangi cihazlarda çalışır?</h3>
+                <p>
+                    Kalite IPTV; Smart TV, Android TV, Android Box, iPhone, iPad, bilgisayar ve uyumlu IPTV uygulamaları üzerinden kullanılabilir. Kurulum için kullanıcı paneli ve destek ekibi üzerinden gerekli bilgiler sağlanır.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Donmasız IPTV izlemek için internet hızım kaç Mbps olmalı?</h3>
+                <p>
+                    HD yayınlar için en az 12 Mbps, 4K yayınlarda daha stabil bir deneyim için 35 Mbps ve üzeri internet bağlantısı önerilir. Kablolu bağlantı kullanmak yayın kalitesini artırabilir.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>IPTV kurulumu ne kadar sürer?</h3>
+                <p>
+                    Paket seçimi tamamlandıktan sonra kurulum bilgileri kısa sürede iletilir. Smart TV, telefon, tablet veya bilgisayar üzerinden izleme için uygun uygulama bilgileri paylaşılır.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>IPTV paketlerinde spor, film ve dizi içerikleri var mı?</h3>
+                <p>
+                    Evet. Kalite IPTV paketlerinde spor kanalları, film içerikleri, dizi içerikleri ve farklı kategorilerde yayın seçenekleri sunulur. Paket içeriği seçilen üyelik türüne göre değişebilir.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>IPTV satın al işleminden sonra destek alabilir miyim?</h3>
+                <p>
+                    Evet. Satın alma sonrasında kurulum, uygulama seçimi, bağlantı ayarları ve kullanım konusunda teknik destek verilir. Böylece IPTV izleme deneyimi daha kolay ve sorunsuz hale gelir.
+                </p>
+            </div>
         </section>
     </main>
 
