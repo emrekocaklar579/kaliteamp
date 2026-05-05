@@ -22,71 +22,145 @@
 
     <style amp-custom>
         :root {
-            --primary: #28a745;
-            --accent: #00d4ff;
-            --dark: #1a1a2e;
-            --text: #333;
-            --light: #f8f9fa;
+            --primary: #5546e8;
+            --accent: #6d5dfc;
+            --dark: #071225;
+            --text: #334155;
+            --light: #f8fafc;
+            --muted: #64748b;
+            --border: #e2e8f0;
+            --card: #ffffff;
+            --success: #22c55e;
         }
 
-        body { background: #fff; color: var(--text); font-family: 'Poppins', sans-serif; line-height: 1.6; }
+        body {
+            background: #f8fafc;
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
         
         /* Header & Banner */
         header { 
+            max-width: 1180px;
+            margin: 8px auto 0;
             text-align: center; 
-            padding: 50px 20px; 
-            background: linear-gradient(135deg, var(--dark), #16213e); 
-            color: #fff; 
-            border-bottom: 4px solid var(--primary);
+            padding: 24px 20px; 
+            background: #ffffff; 
+            color: var(--dark); 
+            border-bottom: none;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
         }
-        header h1 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; text-transform: uppercase; }
-        header span { color: var(--accent); }
-        header p { font-size: 1rem; opacity: 0.8; }
+
+        header h1 {
+            font-size: 1.55rem;
+            margin: 0;
+            font-weight: 800;
+            text-transform: none;
+            color: var(--primary);
+        }
+
+        header span {
+            color: var(--primary);
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 1;
+            color: var(--muted);
+            margin: 8px 0 0;
+        }
 
         /* Login Button Section */
-        .panel-container { padding: 20px; margin-top: -30px; display: flex; justify-content: center; }
+        .panel-container {
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
         .login-btn { 
             background: var(--primary); 
             color: #fff; 
             padding: 15px 40px; 
-            border-radius: 50px; 
+            border-radius: 12px; 
             text-decoration: none; 
             font-weight: 700; 
-            text-transform: uppercase;
-            box-shadow: 0 10px 20px rgba(40,167,69,0.3);
+            text-transform: none;
+            box-shadow: 0 10px 22px rgba(85, 70, 232, 0.28);
             border: none;
             cursor: pointer;
+            font-size: 1rem;
         }
 
         /* SEO Content Section */
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        .seo-box h2 { color: var(--dark); border-left: 5px solid var(--primary); padding-left: 15px; margin: 40px 0 20px; font-size: 1.6rem; }
-        .seo-box h3 { color: var(--primary); margin: 25px 0 10px; font-size: 1.3rem; }
-        .seo-box p { margin-bottom: 20px; color: #555; }
-        
-        .highlight-card { 
-            background: var(--light); 
-            border: 1px solid #eee; 
-            padding: 25px; 
-            border-radius: 15px; 
-            margin: 30px 0;
-            box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
 
-        .check-list { list-style: none; padding: 0; }
-        .check-list li { margin-bottom: 12px; display: flex; align-items: center; font-weight: 600; color: var(--dark); }
-        .check-list li::before { content: "✔"; color: var(--primary); margin-right: 12px; }
+        .seo-box h2 {
+            color: var(--dark);
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+            margin: 40px 0 20px;
+            font-size: 1.6rem;
+        }
+
+        .seo-box h3 {
+            color: var(--primary);
+            margin: 25px 0 10px;
+            font-size: 1.3rem;
+        }
+
+        .seo-box p {
+            margin-bottom: 20px;
+            color: #475569;
+        }
+        
+        .highlight-card { 
+            background: #ffffff; 
+            border: 1px solid var(--border); 
+            padding: 25px; 
+            border-radius: 16px; 
+            margin: 30px 0;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+        }
+
+        .check-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .check-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .check-list li::before {
+            content: "✔";
+            color: var(--primary);
+            margin-right: 12px;
+            font-weight: 900;
+        }
 
         .pricing-section {
             background: #f8fafc;
             padding: 55px 20px;
             margin: 10px 0 35px;
-            border-radius: 22px;
+            border-radius: 0;
         }
 
         .pricing-title {
             text-align: center;
-            color: #071225;
+            color: var(--dark);
             font-size: 1.9rem;
             line-height: 1.3;
             margin: 0 0 35px;
@@ -102,13 +176,13 @@
         }
 
         .price-card {
-            background: #fff;
-            border: 1px solid #e5e7eb;
+            background: #ffffff;
+            border: 1px solid var(--border);
             border-radius: 22px;
             padding: 32px;
             width: 230px;
             min-height: 360px;
-            box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -132,17 +206,17 @@
         }
 
         .badge-time {
-            background: #f0ddff;
-            color: #7a22ce;
+            background: #ede9fe;
+            color: var(--primary);
         }
 
         .badge-popular {
-            background: #d8fbe4;
-            color: #087b38;
+            background: #dcfce7;
+            color: #15803d;
         }
 
         .price-card h2 {
-            color: #071225;
+            color: var(--dark);
             font-size: 1.45rem;
             line-height: 1.35;
             margin: 0 0 20px;
@@ -151,7 +225,7 @@
         }
 
         .price {
-            color: #071225;
+            color: var(--dark);
             font-size: 3rem;
             line-height: 1;
             font-weight: 900;
@@ -171,7 +245,7 @@
         }
 
         .package-list li {
-            color: #213047;
+            color: #334155;
             font-size: 0.92rem;
             font-weight: 600;
             margin-bottom: 16px;
@@ -182,7 +256,7 @@
 
         .package-list li::before {
             content: "✓";
-            background: #22c55e;
+            background: var(--success);
             color: #fff;
             width: 17px;
             height: 17px;
@@ -199,12 +273,12 @@
             display: block;
             text-align: center;
             background: #111827;
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             padding: 16px 18px;
             border-radius: 15px;
             font-weight: 800;
-            box-shadow: 0 10px 18px rgba(15, 23, 42, 0.22);
+            box-shadow: 0 10px 20px rgba(17, 24, 39, 0.22);
         }
 
         .faq-box {
@@ -212,12 +286,12 @@
         }
 
         .faq-item {
-            background: #fff;
-            border: 1px solid #e5e7eb;
+            background: #ffffff;
+            border: 1px solid var(--border);
             border-radius: 16px;
             padding: 22px;
             margin-bottom: 16px;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
         }
 
         .faq-item h3 {
@@ -228,11 +302,51 @@
 
         .faq-item p {
             margin: 0;
-            color: #555;
+            color: #475569;
         }
 
-        footer { text-align: center; padding: 40px; background: var(--dark); color: #fff; font-size: 0.9rem; }
-        .footer-tags { opacity: 0.6; margin-top: 10px; font-size: 0.7rem; }
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #071225;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+
+        .footer-tags {
+            color: #cbd5e1;
+            opacity: 0.8;
+            margin-top: 10px;
+            font-size: 0.7rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                margin: 0;
+                border-radius: 0 0 10px 10px;
+            }
+
+            .container {
+                padding: 28px 16px;
+            }
+
+            .pricing-section {
+                padding: 40px 0;
+            }
+
+            .price-card {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .pricing-title {
+                font-size: 1.55rem;
+            }
+
+            .seo-box h2 {
+                font-size: 1.35rem;
+            }
+        }
     </style>
 
     <!-- Schema.org Verisi -->
@@ -298,7 +412,7 @@
 
 <body>
     <header>
-        <h1>KALİTE <span>IPTV</span> Satın Al</h1>
+        <h1>Kalite IPTV</h1>
         <p>Kesintisiz Yayın, Sınırsız Eğlence ve Profesyonel Altyapı</p>
     </header>
 
@@ -315,31 +429,32 @@
                 <strong>IPTV (Internet Protocol Television)</strong>, televizyon yayınlarının geleneksel uydu yerine internet üzerinden iletilmesini sağlayan bir teknolojidir. Bir <strong>IPTV satın al</strong> araması yaptığınızda, binlerce kanala sadece bir internet bağlantısıyla her yerden erişebileceğiniz bir dünyaya adım atarsınız.
             </p>
             <p>
-                Kalite IPTV, dünyanın en güçlü CDN sunucularını kullanarak size "sıfır gecikme" ve "yüksek çözünürlük" vaat eder. Gurbetteki vatandaşlarımızdan Türkiye'deki spor tutkunlarına kadar herkes için en iyi <strong>IPTV al</strong> çözümünü sunuyoruz.
+                Kalite IPTV, güçlü yayın altyapısı ile hızlı, stabil ve yüksek çözünürlüklü izleme deneyimi sunmayı hedefler. Türkiye’de ve yurt dışında IPTV arayan kullanıcılar için spor, film, dizi ve canlı yayın kategorilerinde zengin içerik seçenekleri sağlar.
             </p>
 
             <div class="highlight-card">
                 <ul class="check-list">
                     <li>4K ve Ultra HD Yayın Seçenekleri</li>
-                    <li>Maç Saatlerinde Donmasız İzleme Garantisi</li>
+                    <li>Maç Saatlerinde Donmasız İzleme Deneyimi</li>
                     <li>Tüm Smart TV ve Mobil Cihazlarla Uyumluluk</li>
-                    <li>7/24 Teknik Destek ve Hızlı Kurulum</li>
+                    <li>Hızlı Kurulum ve Teknik Destek</li>
                 </ul>
             </div>
 
             <h2>Donmasız IPTV İçin Nelere Dikkat Edilmeli?</h2>
             <p>
-                Bir <strong>IPTV</strong> hizmetinden tam verim almak için sadece iyi bir paket satın almak yetmez. Donmasız bir deneyim için şu teknik detaylara dikkat etmelisiniz:
+                Bir <strong>IPTV</strong> hizmetinden tam verim almak için sadece iyi bir paket satın almak yetmez. Donmasız bir deneyim için internet hızı, cihaz uyumluluğu ve kullanılan IPTV uygulaması da önemlidir.
             </p>
+
             <h3>1. İnternet Hızı ve Bağlantı Tipi</h3>
-            <p>HD yayınlar için en az 12 Mbps, <strong>4K IPTV</strong> yayınları için ise en az 35 Mbps stabil internet gereklidir. Mümkünse Wi-Fi yerine kablolu (Ethernet) bağlantı kullanmak, sinyal dalgalanmalarını engeller.</p>
+            <p>HD yayınlar için en az 12 Mbps, <strong>4K IPTV</strong> yayınları için ise en az 35 Mbps stabil internet önerilir. Mümkünse Wi-Fi yerine kablolu bağlantı kullanmak, yayın akıcılığını artırabilir.</p>
             
             <h3>2. Doğru Cihaz ve Uygulama</h3>
-            <p>IPTV; Smart TV, Android Box, Mi Box, iPhone, iPad ve bilgisayar üzerinden izlenebilir. TiviMate, IBO Player veya IPTV Smarters gibi güncel uygulamalar, donanım ivmelendirme kullanarak daha akıcı bir görüntü sağlar.</p>
+            <p>IPTV; Smart TV, Android Box, Mi Box, iPhone, iPad ve bilgisayar üzerinden izlenebilir. Güncel IPTV uygulamaları daha akıcı bir kullanım deneyimi sağlayabilir.</p>
 
             <h2>IPTV Satın Alırken Hangi Paket Seçilmeli?</h2>
             <p>
-                Kullanım amacınıza göre Türkiye paketleri veya Uluslararası (Global) paketler arasından seçim yapabilirsiniz. <strong>IPTV satın al</strong> sürecinde deneme yayınları alarak yayın kalitesini ve kanal hızlarını test etmeniz, en doğru kararı vermenizi sağlar. Kalite IPTV olarak, her bütçeye ve her ihtiyaca uygun, içeriği zenginleştirilmiş paketler sunuyoruz.
+                Kullanım amacınıza göre 6 aylık, 12 aylık veya VIP paketler arasından seçim yapabilirsiniz. <strong>IPTV satın al</strong> sürecinde uzun süreli kullanım için 12 aylık paketler daha avantajlı olurken, daha geniş içerik isteyen kullanıcılar VIP paketi tercih edebilir.
             </p>
         </section>
 
@@ -363,7 +478,7 @@
                         </ul>
                     </div>
 
-                    <a class="buy-btn" href="https://kaliteplayer11.com" target="_top">Hemen Satın Al</a>
+                    <a class="buy-btn" href="https://kaliteplayer12.com/" target="_top">Hemen Satın Al</a>
                 </div>
 
                 <div class="price-card">
@@ -383,7 +498,7 @@
                         </ul>
                     </div>
 
-                    <a class="buy-btn" href="https://kaliteplayer11.com" target="_top">Hemen Satın Al</a>
+                    <a class="buy-btn" href="https://kaliteplayer12.com/" target="_top">Hemen Satın Al</a>
                 </div>
 
                 <div class="price-card">
@@ -402,7 +517,7 @@
                         </ul>
                     </div>
 
-                    <a class="buy-btn" href="https://kaliteplayer11.com" target="_top">Hemen Satın Al</a>
+                    <a class="buy-btn" href="https://kaliteplayer12.com/" target="_top">Hemen Satın Al</a>
                 </div>
             </div>
         </section>
