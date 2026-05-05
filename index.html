@@ -6,14 +6,11 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     
-    <!-- Başlık: Tam SEO Odaklı -->
-    <title>Kalite IPTV - IPTV Satın Al</title>
+    <title>IPTV Satın Al - Kalite IPTV 4K Donmasız Yayın Paketleri</title>
 
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    
-    <!-- Meta Açıklama: Tıklama Oranı (CTR) İçin Optimize Edildi -->
-    <meta name="description" content="Dünyanın her yerinden binlerce kanal! IPTV satın al, donmasız 4K yayınlar ve spor kanallarıyla en iyi IPTV al deneyimini yaşa. Hemen kurulum ve teknik destek.">
-    <meta name="keywords" content="iptv, iptv satın al, iptv al, donmasız iptv, 4k iptv, iptv turkey, kalite iptv">
+    <meta name="description" content="En uygun fiyatlarla IPTV satın al! 6 ve 12 aylık donmasız 4K paket seçenekleri, tüm spor kanalları ve güncel film arşivi Kalite IPTV'de. Hemen abone olun.">
+    <meta name="keywords" content="iptv, iptv satın al, iptv al, donmasız iptv, 4k iptv, iptv turkey, kalite iptv paketleri">
 
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kaliteplayer12.com/" />
@@ -23,128 +20,172 @@
     <style amp-custom>
         :root {
             --primary: #28a745;
-            --accent: #00d4ff;
             --dark: #1a1a2e;
-            --text: #333;
-            --light: #f8f9fa;
+            --accent: #00d4ff;
+            --bg-light: #f4f7f6;
         }
 
-        body { background: #fff; color: var(--text); font-family: 'Poppins', sans-serif; line-height: 1.6; }
+        body { background: #fff; color: #333; font-family: 'Poppins', sans-serif; line-height: 1.6; }
         
-        /* Header & Banner */
         header { 
             text-align: center; 
-            padding: 50px 20px; 
+            padding: 40px 20px; 
             background: linear-gradient(135deg, var(--dark), #16213e); 
             color: #fff; 
-            border-bottom: 4px solid var(--primary);
         }
-        header h1 { font-size: 2.2rem; margin-bottom: 10px; font-weight: 800; text-transform: uppercase; }
-        header span { color: var(--accent); }
-        header p { font-size: 1rem; opacity: 0.8; }
+        header h1 { font-size: 2rem; font-weight: 800; text-transform: uppercase; margin-bottom: 5px; }
+        header h1 span { color: var(--primary); }
 
-        /* Login Button Section */
-        .panel-container { padding: 20px; margin-top: -30px; display: flex; justify-content: center; }
+        .panel-container { padding: 20px; margin-top: -30px; text-align: center; }
         .login-btn { 
             background: var(--primary); 
             color: #fff; 
-            padding: 15px 40px; 
+            padding: 15px 35px; 
             border-radius: 50px; 
             text-decoration: none; 
             font-weight: 700; 
-            text-transform: uppercase;
-            box-shadow: 0 10px 20px rgba(40,167,69,0.3);
             border: none;
-            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(40,167,69,0.3);
         }
 
-        /* SEO Content Section */
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        .seo-box h2 { color: var(--dark); border-left: 5px solid var(--primary); padding-left: 15px; margin: 40px 0 20px; font-size: 1.6rem; }
-        .seo-box h3 { color: var(--primary); margin: 25px 0 10px; font-size: 1.3rem; }
-        .seo-box p { margin-bottom: 20px; color: #555; }
-        
-        .highlight-card { 
-            background: var(--light); 
+        .section-title { text-align: center; font-size: 1.5rem; font-weight: 800; margin: 40px 0 20px; color: var(--dark); }
+
+        /* Paket Kartları */
+        .packages-grid { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center; 
+            padding: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .package-card { 
+            background: #fff; 
             border: 1px solid #eee; 
-            padding: 25px; 
-            border-radius: 15px; 
-            margin: 30px 0;
-            box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+            border-radius: 20px; 
+            padding: 30px 20px; 
+            width: 100%; 
+            max-width: 320px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .badge-row { display: flex; justify-content: space-between; margin-bottom: 15px; }
+        .badge { font-size: 0.7rem; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; }
+        .badge-time { background: #f0e6ff; color: #a855f7; }
+        .badge-pop { background: #dcfce7; color: #22c55e; }
+
+        .package-name { font-size: 1.2rem; font-weight: 800; margin-bottom: 15px; color: var(--dark); }
+        .price { font-size: 2.5rem; font-weight: 900; color: var(--dark); margin-bottom: 20px; }
+        .price span { font-size: 1.2rem; margin-left: 5px; }
+
+        .features-list { list-style: none; padding: 0; margin-bottom: 30px; text-align: left; }
+        .features-list li { margin-bottom: 10px; font-size: 0.9rem; font-weight: 600; display: flex; align-items: center; }
+        .features-list li::before { content: "✔"; color: var(--primary); margin-right: 10px; font-weight: 900; }
+
+        .buy-btn { 
+            display: block; 
+            background: #1a1a2e; 
+            color: #fff; 
+            padding: 14px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 700; 
         }
 
-        .check-list { list-style: none; padding: 0; }
-        .check-list li { margin-bottom: 12px; display: flex; align-items: center; font-weight: 600; color: var(--dark); }
-        .check-list li::before { content: "✔"; color: var(--primary); margin-right: 12px; }
+        /* SEO Metin Alanı */
+        .seo-text { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .seo-text h2 { border-left: 4px solid var(--primary); padding-left: 15px; margin-bottom: 15px; font-size: 1.4rem; color: var(--dark); }
+        .seo-text p { margin-bottom: 20px; font-size: 0.95rem; color: #666; }
 
-        footer { text-align: center; padding: 40px; background: var(--dark); color: #fff; font-size: 0.9rem; }
-        .footer-tags { opacity: 0.6; margin-top: 10px; font-size: 0.7rem; }
+        footer { text-align: center; padding: 40px; background: var(--dark); color: #fff; font-size: 0.8rem; }
     </style>
-
-    <!-- Schema.org Verisi -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "IPTV Satın Al - Kalite IPTV",
-      "description": "Dünya genelinde 4K donmasız IPTV hizmeti ve paketleri."
-    }
-    </script>
 </head>
 
 <body>
     <header>
-        <h1>KALİTE <span>IPTV</span> Satın Al</h1>
-        <p>Kesintisiz Yayın, Sınırsız Eğlence ve Profesyonel Altyapı</p>
+        <h1>KALİTE <span>IPTV</span></h1>
+        <p>Kesintisiz 4K Yayın ve Global Kanal Altyapısı</p>
     </header>
 
     <div class="panel-container">
         <form method="get" action="https://kaliteplayer11.com" target="_top">
-            <button class="login-btn" type="submit">Kullanıcı Paneline Giriş Yap</button>
+            <button class="login-btn" type="submit">Kullanıcı Paneline Giriş</button>
         </form>
     </div>
 
-    <main class="container">
-        <section class="seo-box">
-            <h2>IPTV Nedir ve Neden Kalite IPTV?</h2>
-            <p>
-                <strong>IPTV (Internet Protocol Television)</strong>, televizyon yayınlarının geleneksel uydu yerine internet üzerinden iletilmesini sağlayan bir teknolojidir. Bir <strong>IPTV satın al</strong> araması yaptığınızda, binlerce kanala sadece bir internet bağlantısıyla her yerden erişebileceğiniz bir dünyaya adım atarsınız.
-            </p>
-            <p>
-                Kalite IPTV, dünyanın en güçlü CDN sunucularını kullanarak size "sıfır gecikme" ve "yüksek çözünürlük" vaat eder. Gurbetteki vatandaşlarımızdan Türkiye'deki spor tutkunlarına kadar herkes için en iyi <strong>IPTV al</strong> çözümünü sunuyoruz.
-            </p>
+    <h2 class="section-title">Size En Uygun Paketi Seçin</h2>
 
-            <div class="highlight-card">
-                <ul class="check-list">
-                    <li>4K ve Ultra HD Yayın Seçenekleri</li>
-                    <li>Maç Saatlerinde Donmasız İzleme Garantisi</li>
-                    <li>Tüm Smart TV ve Mobil Cihazlarla Uyumluluk</li>
-                    <li>7/24 Teknik Destek ve Hızlı Kurulum</li>
-                </ul>
+    <div class="packages-grid">
+        <!-- 6 Aylık Paket -->
+        <div class="package-card">
+            <div class="badge-row">
+                <span class="badge badge-time">6 AY</span>
             </div>
+            <h3 class="package-name">IPTV Satın Al 6 Aylık Paket</h3>
+            <div class="price">1500<span>₺</span></div>
+            <ul class="features-list">
+                <li>Tüm spor kanalları</li>
+                <li>Tüm film ve diziler</li>
+            </ul>
+            <a href="#" class="buy-btn">Hemen Satın Al</a>
+        </div>
 
-            <h2>Donmasız IPTV İçin Nelere Dikkat Edilmeli?</h2>
+        <!-- 12 Aylık Paket -->
+        <div class="package-card">
+            <div class="badge-row">
+                <span class="badge badge-time">12 AY</span>
+                <span class="badge badge-pop">POPÜLER</span>
+            </div>
+            <h3 class="package-name">IPTV Satın Al 12 Aylık Paket</h3>
+            <div class="price">2000<span>₺</span></div>
+            <ul class="features-list">
+                <li>Tüm spor kanalları</li>
+                <li>Tüm film ve diziler</li>
+            </ul>
+            <a href="#" class="buy-btn">Hemen Satın Al</a>
+        </div>
+
+        <!-- 12 Aylık VIP -->
+        <div class="package-card">
+            <div class="badge-row">
+                <span class="badge badge-time">12 AY</span>
+                <span class="badge badge-pop">POPÜLER</span>
+            </div>
+            <h3 class="package-name">IPTV Satın Al 12 Aylık VIP</h3>
+            <div class="price">2500<span>₺</span></div>
+            <ul class="features-list">
+                <li>Tüm Kanallar</li>
+            </ul>
+            <a href="#" class="buy-btn">Hemen Satın Al</a>
+        </div>
+    </div>
+
+    <main class="seo-text">
+        <section>
+            <h2>IPTV Nedir? Neden Kalite IPTV?</h2>
             <p>
-                Bir <strong>IPTV</strong> hizmetinden tam verim almak için sadece iyi bir paket satın almak yetmez. Donmasız bir deneyim için şu teknik detaylara dikkat etmelisiniz:
+                <strong>IPTV (Internet Protocol Television)</strong>, televizyon kanallarını internet üzerinden izlemenizi sağlayan en yeni teknolojidir. 
+                <strong>IPTV satın al</strong> işlemi yaparak donma ve takılma sorunlarını geride bırakırsınız. Kalite IPTV, dünya genelinde Türklere özel optimize edilmiş 4K sunucularıyla hizmet vermektedir.
             </p>
-            <h3>1. İnternet Hızı ve Bağlantı Tipi</h3>
-            <p>HD yayınlar için en az 12 Mbps, <strong>4K IPTV</strong> yayınları için ise en az 35 Mbps stabil internet gereklidir. Mümkünse Wi-Fi yerine kablolu (Ethernet) bağlantı kullanmak, sinyal dalgalanmalarını engeller.</p>
             
-            <h3>2. Doğru Cihaz ve Uygulama</h3>
-            <p>IPTV; Smart TV, Android Box, Mi Box, iPhone, iPad ve bilgisayar üzerinden izlenebilir. TiviMate, IBO Player veya IPTV Smarters gibi güncel uygulamalar, donanım ivmelendirme kullanarak daha akıcı bir görüntü sağlar.</p>
-
-            <h2>IPTV Satın Alırken Hangi Paket Seçilmeli?</h2>
+            <h2>Hangi Cihazlardan İzlenir?</h2>
             <p>
-                Kullanım amacınıza göre Türkiye paketleri veya Uluslararası (Global) paketler arasından seçim yapabilirsiniz. <strong>IPTV satın al</strong> sürecinde deneme yayınları alarak yayın kalitesini ve kanal hızlarını test etmeniz, en doğru kararı vermenizi sağlar. Kalite IPTV olarak, her bütçeye ve her ihtiyaca uygun, içeriği zenginleştirilmiş paketler sunuyoruz.
+                Servisimiz; <strong>Smart TV</strong> (Samsung, LG, Philips), <strong>Android Box</strong>, Mi Box, iPhone, iPad, Android telefonlar ve bilgisayarlar ile %100 uyumludur. 
+                Sadece bir uygulama (IBO Player, TiviMate vb.) kurarak yayını anında başlatabilirsiniz.
+            </p>
+
+            <h2>Donmasız 4K IPTV Keyfi</h2>
+            <p>
+                Yüksek bant genişliğine sahip altyapımız sayesinde, internet hızınız uygun olduğu sürece maç saatlerinde dahi <strong>donmasız IPTV</strong> deneyimi yaşarsınız. 
+                <strong>IPTV al</strong> hizmetimiz, Türkiye ve Avrupa'daki en geniş kanal listesine ve sürekli güncellenen film/dizi arşivine sahiptir.
             </p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Kalite IPTV. Tüm hakları saklıdır.</p>
-        <div class="footer-tags">
-            IPTV SATIN AL | IPTV AL | IPTV TURKEY | 4K IPTV | DONMASIZ IPTV
-        </div>
+        <p>&copy; 2026 Kalite IPTV. Tüm Hakları Saklıdır.</p>
+        <p style="margin-top:10px; opacity: 0.5;">IPTV SATIN AL | IPTV AL | IPTV TURKEY</p>
     </footer>
 </body>
 </html>
